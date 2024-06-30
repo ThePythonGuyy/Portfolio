@@ -1,0 +1,23 @@
+@use '../styles/index' as *;
+
+
+.home {
+    width: 100%;
+    background-color: $black-100;
+    @include flex-col;
+    // overflow: hidden;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+
+    
+    @include small-break {
+        // padding: auto 2.5rem;
+    }
+}
+
+.main{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+

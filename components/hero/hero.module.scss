@@ -1,0 +1,84 @@
+@use "../../styles/index" as *;
+
+.hero {
+  padding-bottom: 5rem;
+  padding-top: 9rem;
+
+  @include mid-break {
+    top: -5rem;
+    left: -8rem;
+    height: 100vh;
+  }
+}
+
+.spotlight_1 {
+  top: -10rem;
+  left: -2.5rem;
+}
+
+.spotlight_2 {
+  top: 2.5rem;
+  left: 100%;
+  height: 80vh;
+  width: 50vw;
+}
+
+.spotlight_3 {
+  top: 7rem;
+  left: 20rem;
+  height: 80vh;
+  width: 50vw;
+}
+
+.heroContent_container {
+  @include flex-row;
+  position: relative;
+  margin: 4rem 0;
+  z-index: 10;
+}
+
+.heroContent {
+  max-width: 70vw;
+  @include flex-col;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue-100;
+    letter-spacing: 0.3em;
+    // max-width: 20rem;
+  }
+
+  p{
+    text-align: center;
+    margin-bottom: 1rem;
+    @include small-semibold;
+  }
+
+  @include large-break {
+    max-width: 60vw;
+  }
+
+  @include mid-break {
+    max-width: 42rem;
+  }
+
+  
+}
+
+.textGenerate {
+  text-align: center;
+  @include heading1-bold;
+  letter-spacing: 0.025em;
+  font-size: clamp(1.5rem, 3vw, 3rem)
+
+;
+} 
+
+
+.button {
+  width: 8rem;
+  span:nth-child(2){
+    @include flex-row($jc: space-around);
+  }
+ 
+}
