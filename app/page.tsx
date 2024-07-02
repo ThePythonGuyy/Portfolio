@@ -5,6 +5,9 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import Grid from "@/components/grid/Grid";
 import ProjectCollection from "@/components/projectCollection/ProjectCollection";
 
+import Approach from '@/components/approach/Approach'
+import Footer from "@/components/footer/Footer";
+
 export default function Home() {
   return (
     <section className={styles.home}>
@@ -13,9 +16,12 @@ export default function Home() {
         <Hero />
         <Grid />
         <ProjectCollection />
-        <div className="mt-20">
+        <Approach />
+        <Footer />
+        {/* <div className="mt-20">
         <Grid />
-        </div>
+
+        </div> */}
   
       </div>
     </section>

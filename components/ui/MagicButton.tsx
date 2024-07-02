@@ -3,8 +3,8 @@ import React from "react";
 
 interface buttonProps {
   title: string;
-  icon: string;
-  position: 'left' | 'right';
+  icon?: string;
+  position?: 'left' | 'right';
   handleClick?: (e:React.MouseEvent<HTMLElement>) => void;
   styles?: string;
 
@@ -12,6 +12,7 @@ interface buttonProps {
 export default function MagicButton({title, icon, position, handleClick, styles} : buttonProps) {
 
   const iconDeploy = () => {
+    if(icon){
     return (
       <Image 
         src={icon}
@@ -19,7 +20,11 @@ export default function MagicButton({title, icon, position, handleClick, styles}
         height={20}
         width={20}
       />
+
     )
+  } else {
+    return <></>
+  }
   }
   return (
     <button className={`relative inline-flex h-12  overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60   ${styles}`} onClick={handleClick}>

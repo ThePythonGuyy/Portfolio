@@ -1,0 +1,43 @@
+@use '../../styles/index' as *;
+
+
+.container {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.heading {
+    @include heading1-bold;
+    width: 100%;
+    text-align: center;
+
+    >span {
+        color: $purple;
+    }
+}
+
+.phaseButton {
+    >span:nth-of-type(2) {
+        >span {
+           @include heading3-bold;
+           color: $purple;
+           text-transform: uppercase;
+        }
+    }
+}
+
+.phaseDetails {
+    @include flex-col($jc: center);
+    gap: 4rem;
+    padding: 0 2rem;
+
+    >h3 {
+        @include heading2-bold;
+        text-align: center;
+    }
+
+    >p{
+        @include body-semibold;
+        text-align: center;
+    }
+}

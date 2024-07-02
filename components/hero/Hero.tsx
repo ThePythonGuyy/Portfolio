@@ -12,9 +12,9 @@ export default function Hero() {
       <div>
         <Spotlight className={styles.spotlight_1} fill="white" />
         <Spotlight className={styles.spotlight_2} fill="purple" />
-        {/* <Spotlight className={styles.spotlight_3} fill="blue" /> */}
+        <Spotlight className={styles.spotlight_3} fill="blue" />
       </div>
-      <div className="h-[100vh] w-[100vw] dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.3] flex items-center justify-center absolute top-0 left-0 opacity-2">
+      <div className="h-[100vh] w-[100vw] dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.3] flex items-center justify-center absolute top-0 left-0 opacity-40">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] " />
       </div>
       <div className={styles.heroContent_container}>

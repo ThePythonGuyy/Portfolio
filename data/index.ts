@@ -195,17 +195,44 @@ export const workExperience = [
   },
 ];
 
-export const socialMedia = [
+export const profileLinks = [
   {
-    id: 1,
+    name: 'github',
+    link: 'https://github.com/ThePythonGuyy',
     img: "/git.svg",
   },
   {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/rahul-v-588467212/',
     img: "/link.svg",
   },
+  {
+    name: 'Instagram',
+    link: '',
+    img: "/instagram.svg",
+  },
 ];
+
+export const planningPhase = {
+  phase1: {
+    id: "1",
+    title: "Planning & Strategy",
+    des: `We'll collaborate to map out your website's goals, target audience, 
+    and key functionalities. We'll discuss things like site structure, 
+    navigation, and content requirements.`,
+  },
+  phase2: {
+    id: "2",
+    title: "Development & Progress Update",
+    des: `Once we agree on the plan, I cue my lofi playlist and dive into
+    coding. From initial sketches to polished code, I keep you updated
+    every step of the way.`,
+  },
+  phase3: {
+    id: "3",
+    title: "Development & Launch",
+    des: `This is where the magic happens! Based on the approved design, 
+    I'll translate everything into functional code, building your website
+    from the ground up.`,
+  },
+};
