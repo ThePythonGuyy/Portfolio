@@ -23,7 +23,7 @@ export default function Footer() {
 
     <div>
         {profileLinks.map((profile) => (
-            <a href={profile.link} target='_blank'>
+            <a href={profile.link} target='_blank' key={profile.name}>
                 <img src={profile.img} alt={profile.name} className={profile.name === 'LinkedIn' ? '!w-[60%] ' : ''} />
             </a>
         ))}

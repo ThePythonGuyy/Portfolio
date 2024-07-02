@@ -20,7 +20,7 @@ export default function ProjectCollection() {
       </h1>
       <div className={styles.projContainer}>
         {projects.map((project) => (
-          <div className={styles.projectCard}>
+          <div className={styles.projectCard} key={project.id}>
             <PinContainer title="" href={project.link}>
               <div className={styles.CardImgContainer}>
                 <div>
