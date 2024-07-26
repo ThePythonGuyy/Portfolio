@@ -2,12 +2,14 @@
 import { projects } from "@/data";
 import styles from "./projectCollection.module.scss";
 import { PinContainer } from "../ui/3d-pin";
+import { useState } from "react";
 
 
 
 export default function ProjectCollection() {
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   function vwToPixels(vw:any):Number {
-    var viewportWidth = window.innerHeight;
+    var viewportWidth = windowHeight;
     return (vw / 100) * viewportWidth;
   }
   
