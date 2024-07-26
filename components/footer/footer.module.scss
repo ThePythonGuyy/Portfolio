@@ -68,10 +68,11 @@
         >a {
             width: 3rem;
             height: 3rem;
-            // border: 1px solid rgba(255, 255, 255, 0.737);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            background-color: #ffffff40;
+            border: 1px solid #ffffff2e;
             border-radius: 15px;
-            backdrop-filter: blur(1rem); 
-            // filter: saturate(180%);
             @include flex-row;
             >img {
                 width: 70% ;

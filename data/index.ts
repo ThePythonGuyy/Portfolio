@@ -1,9 +1,9 @@
 export const navItems = [
   { name: "Home", link: "#home", icon: `/icons/home.svg` },
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "#about", icon: `/icons/about.svg`  },
+  { name: "Projects", link: "#projects", icon: `/icons/projects.svg`  },
+  // { name: "Testimonials", link: "#testimonials" },
+  { name: "Contact", link: "#contact", icon: `/icons/contact.svg`  },
 ];
 
 export const gridItems = [
@@ -14,6 +14,7 @@ export const gridItems = [
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: `/b1.svg`,
+ 
     spareImg: "",
   },
   {

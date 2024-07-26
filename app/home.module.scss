@@ -26,5 +26,22 @@
     border-radius: 15px !important;
     background-color: $black-100 !important;
     @include base-semibold;
+    gap: 3vw;
+
+    >a {
+        gap: 5px;
+    }
+
+    @include mid-break {
+
+        img {
+            display: none;
+        }
+
+    }
+
+    @include small-break{
+        @include small-semibold;
+    }
 }
 
