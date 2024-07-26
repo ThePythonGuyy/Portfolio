@@ -4,6 +4,7 @@ import styles from "./projectCollection.module.scss";
 import { PinContainer } from "../ui/3d-pin";
 
 
+
 export default function ProjectCollection() {
   function vwToPixels(vw:any):Number {
     var viewportWidth = window.innerHeight;
