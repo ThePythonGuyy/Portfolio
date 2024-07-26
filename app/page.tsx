@@ -7,12 +7,14 @@ import ProjectCollection from "@/components/projectCollection/ProjectCollection"
 
 import Approach from '@/components/approach/Approach'
 import Footer from "@/components/footer/Footer";
+import { navItems } from "@/data";
+
 
 export default function Home() {
   return (
     <section className={styles.home}>
       <div className={styles.main}>
-        {/* <FloatingNav /> */}
+      <FloatingNav navItems={navItems} classN={styles.nav} />
         <Hero />
         <Grid />
         <ProjectCollection />

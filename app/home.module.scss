@@ -21,3 +21,10 @@
     position: relative;
 }
 
+.nav {
+    padding: 1rem 2rem;
+    border-radius: 15px !important;
+    background-color: $black-100 !important;
+    @include base-semibold;
+}
+

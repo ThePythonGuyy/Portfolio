@@ -1,4 +1,5 @@
 export const navItems = [
+  { name: "Home", link: "#home", icon: `/icons/home.svg` },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
@@ -45,7 +46,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a threads application",
     description: "The Inside Scoop",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",

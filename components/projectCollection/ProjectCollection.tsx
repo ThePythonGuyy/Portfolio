@@ -36,7 +36,7 @@ export default function ProjectCollection() {
   var tenVwInPixels = vwToPixels(10);
   console.log(tenVwInPixels);
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="projects">
       <h1 className={styles.heading}>
         A small selection of <span>recent projects</span>
       </h1>

@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Hero() {
   
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id='home'>
       <div>
         <Spotlight className={styles.spotlight_1} fill="white" />
         <Spotlight className={styles.spotlight_2} fill="purple" />
