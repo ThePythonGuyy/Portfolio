@@ -43,7 +43,7 @@ export default function ProjectCollection() {
       <div className={styles.projContainer}>
         {projects.map((project) => (
           <div className={styles.projectCard} key={project.id}>
-            <PinContainer title="" href={project.link}>
+            <PinContainer title="" hrefLink={project.link} >
               <div className={styles.CardImgContainer}>
                 <div>
                   <img src="/bg.png" alt="bg img" />
